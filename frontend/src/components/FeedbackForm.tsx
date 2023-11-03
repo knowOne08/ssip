@@ -23,6 +23,22 @@ export const FeedbackForm = () => {
   const handleSubmit = (data: any) => {
     console.log(data);
   };
+  const talukaData = {
+      ahmedabad: [
+        {value:"detroj" ,name:"Detroj"},
+        {value:"daskroi" ,name:"Daskroi"},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+        {value:"" ,name:""},
+      ]
+  }
 
   return (
     <Container maxWidth="sm">
@@ -73,10 +89,35 @@ export const FeedbackForm = () => {
           <Typography variant="body1">Select Police Station:</Typography>
           <FormControl variant="outlined" fullWidth>
             <InputLabel>Select District</InputLabel>
-            <Select {...formMethods.register('dropdown1')}>
-              <MenuItem value="option1">Option 1</MenuItem>
-              <MenuItem value="option2">Option 2</MenuItem>
-              <MenuItem value="option3">Option 3</MenuItem>
+            <Select {...formMethods.register('dropdown1')}>                    
+              <MenuItem value="ahmedabad">Ahmedabad</MenuItem>
+              <MenuItem value="ahmedabad_city">Ahmedabad City</MenuItem>
+              <MenuItem value="amreli">Amreli</MenuItem>
+              <MenuItem value="anand">Anand</MenuItem>
+              <MenuItem value="kutch">Kutch</MenuItem>
+              <MenuItem value="gandhinagar">Gandhinagar</MenuItem>
+              <MenuItem value="junagadh">Junagadh</MenuItem>
+              <MenuItem value="jamnagar">Jamnagar</MenuItem>
+              <MenuItem value="dang">Dang</MenuItem>
+              <MenuItem value="dahod">Dahod</MenuItem>
+              <MenuItem value="narmada">Narmada</MenuItem>
+              <MenuItem value="navsari">Navsari</MenuItem>
+              <MenuItem value="panchmahal">Panchmahal</MenuItem>
+              <MenuItem value="patan">Patan</MenuItem>
+              <MenuItem value="porabandar">Porabandar</MenuItem>
+              <MenuItem value="banaskantha">Banaskantha</MenuItem>
+              <MenuItem value="bharuch">Bharuch</MenuItem>
+              <MenuItem value="bhavnagar">Bhavnagar</MenuItem>
+              <MenuItem value="mehsana">Mehsana</MenuItem>
+              <MenuItem value="rajkot">Rajkot</MenuItem>
+              <MenuItem value="rajkot_city">Rajkot City</MenuItem>
+              <MenuItem value="vadodara">Vadodara</MenuItem>
+              <MenuItem value="vadodara_city">Vadodara City</MenuItem>
+              <MenuItem value="valsad">Valsad</MenuItem>
+              <MenuItem value="surat">Surat</MenuItem>
+              <MenuItem value="surat_city">Surat City</MenuItem>
+              <MenuItem value="surendranagar">Surendranagar</MenuItem>
+              <MenuItem value="sabarkantha">Sabarkantha</MenuItem>
             </Select>
           </FormControl>
           <FormControl variant="outlined" fullWidth>
